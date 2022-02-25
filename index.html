@@ -4,14 +4,28 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-      name="description"
-      content="The Lebanese Twist"
-    />
-      <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
-      <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
-      <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
-      <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+      <meta name="description" content="The Lebanese Twist" />
+      <link rel="stylesheet" href="app.css" />
+      <link
+         rel="apple-touch-icon"
+         sizes="57x57"
+         href="./favicon/apple-icon-57x57.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="60x60"
+         href="./favicon/apple-icon-60x60.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="72x72"
+         href="./favicon/apple-icon-72x72.png"
+      />
+      <link
+         rel="apple-touch-icon"
+         sizes="76x76"
+         href="./favicon/apple-icon-76x76.png"
+      />
       <link
          rel="apple-touch-icon"
          sizes="114x114"
@@ -63,194 +77,17 @@
       />
       <link rel="manifest" href="./favicon/manifest.json" />
       <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+      <meta
+         name="msapplication-TileImage"
+         content="./favicon/ms-icon-144x144.png"
+      />
       <meta name="theme-color" content="#ffffff" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
       <title>Hummus Nest</title>
    </head>
-   <style>
-      html {
-         position: relative;
-         height: 100%;
-         min-height: 100%;
-         /* height: calc(100% -50px); */
-      }
-      body {
-         
-         height: 100%;
-         /* height: calc(100% -50px); */
-      }
-      .container {
-         height: 100%;
-         background-color: #fdb94e;
-         background: fixed url(bf.jpg);
-         background-attachment: fixed;
-         background-size: cover;
-         /* margin-bottom: 2rem; */
-         height: 100%;
-         
-         /* height: calc(100% -50px); */
-      }
-      * {
-         margin: 0;
-         padding: 0;
-      }
-      .img {
-         width: 14rem;
-      }
-      .modal-header {
-         font-family: latoBoldItalic;
-         color: black;
-         font-size: 3rem;
-         padding: 1rem;
-         line-height: 3.2rem;
-         padding-top: 3rem;
-         letter-spacing: 0.05rem;
-      }
-      .header {
-         font-family: Bellfort;
-         color: #fdb94e;
-         font-size: 3rem;
-         padding: 2rem;
-      }
-      .modal-logo {
-         font-family: Bellfort;
-         color: #fdb94e;
-         font-size: 3rem;
-         padding-left: 1rem;
-         padding-top: 3rem;
-         letter-spacing: 0.3rem;
-      }
-      .modal {
-         font-family: lato;
-         background: #fff;
-         width: 30%;
-         padding: 1.5rem;
-         margin: 2rem;
-
-         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.22);
-         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      }
-      .modal:hover {
-         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.22);
-      }
-      .modal-content {
-         font-size: 1.1rem;
-         padding-left: 1rem;
-         line-height: 1.5rem;
-         padding-top: 0.5rem;
-         padding-bottom: 5rem;
-         letter-spacing: 0.05rem;
-      }
-      a {
-         color: #fdb94e;
-      }
-      @font-face {
-         font-family: Bellfort;
-         src: url(Bellfort.ttf);
-      }
-      @font-face {
-         font-family: lato;
-         src: url(Lato-Regular.ttf);
-      }
-      @font-face {
-         font-family: latoBold;
-         src: url(Lato-Bold.ttf);
-      }
-      @font-face {
-         font-family: latoBoldItalic;
-         src: url(Lato-BoldItalic.ttf);
-      }
-      .meanwhile {
-         font-family: latoBoldItalic;
-         padding-top: 2rem;
-      }
-      .phone-data {
-         padding-top: 0.3rem;
-         font-size: 0.9rem;
-      }
-      .footer {
-         background-color: #fff;
-         font-family: lato;
-         color: #4e4e4e;
-         font-size: 0.9rem;
-         position: absolute;
-         left: 0;
-         bottom: 0;
-         height: 50px;
-         width: 100%;
-         overflow: hidden;
-      }
-      .copyright {
-         padding: 1rem;
-         display: flex;
-      }
-      @media only screen and (max-width: 750px) {
-         .modal {
-            width: calc(100% - 3rem);
-            margin: 0;
-            margin-top: 2rem;
-         }
-         .container {
-            padding: 1rem;
-            background: #fdb94e;
-            min-height: 50rem;
-            
-         }
-         .footer {
-            position: relative;
-         }
-         .header {
-            padding: 0;
-         }
-         .img {
-            width: 50%;
-         }
-         .modal-logo {
-            font-size: 2rem;
-         }
-         .modal-header {
-            font-size: 2.5rem;
-            padding-top: 2rem;
-         }
-         .modal-content {
-            font-size: 1rem;
-         }
-         .footer{
-            bottom:unset;
-         }
-      }
-      @media only screen and (min-width: 750px) and (max-width: 1200px) {
-         .modal {
-            width: 50%;
-            margin: 0;
-         }
-         .container {
-            padding: 1rem;
-            min-height: 50rem;
-         }
-         .footer {
-            position: relative;
-            bottom:unset;
-         }
-      }
-
-      @media only screen and (max-height: 855px) and (min-width: 750px){
-         .modal {
-            width: 50%;
-            margin: 0;
-         }
-         .container {
-            padding: 1rem;
-            min-height: 50rem;
-         }
-         .footer {
-            position: relative;
-            bottom:unset;
-         }
-      }
-   </style>
    <body>
       <div class="container">
          <div class="header">
@@ -267,7 +104,21 @@
                <p>for delivery.</p>
                <p class="meanwhile">Meanwhile, you can get in touch with us.</p>
                <p class="phone-data">
-                  Ph: <a href="tel:+918109768874">+91-8109768874</a>
+                  <a target="_blank"
+                     href="https://instagram.com/hummusnest?utm_medium=copy_link"
+                     ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a> 
+                  <span> &nbsp;&nbsp; | &nbsp;&nbsp;</span>
+                  <a target="_blank"
+                     href="https://www.facebook.com/Hummus-Nest-109052738361565/"
+                     ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <span> &nbsp;&nbsp; | &nbsp;&nbsp; </span>
+                  <a 
+                  target="_blank"
+                  href="mailto: healthymonkfoods@gmail.com"
+                     ><i class="fa fa-envelope-o" aria-hidden="true"></i
+                  ></a>
                </p>
             </div>
          </div>
