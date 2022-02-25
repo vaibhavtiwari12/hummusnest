@@ -116,6 +116,9 @@ html {
     padding: 1rem;
     display: flex;
  }
+ .divider {
+    color: #9e9e9e;
+ }
  @media only screen and (max-width: 750px) {
     .modal {
        width: calc(100% - 3rem);
